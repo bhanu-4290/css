@@ -1,0 +1,360 @@
+body{
+    margin: 0px;
+    font-family: 'Mulish', sans-serif;
+}
+/* header start */
+.header_top{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0px;
+}
+.nav_select ul li a{
+    text-decoration: none;
+    
+    
+}
+.logo img{
+    padding: 10px 0px 10px 80px;
+}
+.header_top ul{
+    display: flex;
+    align-items: center;
+    padding-left: 48%;
+}
+.header_top li{
+    list-style: none;
+    margin: 10px;
+}
+.header_top li p{
+    font-weight: bold;
+}
+.nav{
+    background: #252525;
+    font-size: 16px;
+}
+.navigation ul{
+    align-items: center;
+    margin: 0px;
+}
+.navigation li{
+
+}
+.nav ul li a {
+    text-decoration: none;
+    padding: 70px;
+    color: rgb(234, 229, 229);
+
+}
+.navigation{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    color: white;
+    margin-left: 10px;
+}
+.all_items{
+    display: flex;
+    padding-left: 10px;
+    border:  1px solid rgb(87, 84, 84);
+    align-items: center;
+    justify-items: center;
+}
+.all_items p{
+    padding-left: 10px;
+}
+.nav_select{
+    display: flex;
+
+}
+.select_nav{
+    border-right: 1px dotted rgb(108, 105, 105);
+    color: white;
+   padding: 20px 40px 20px 40px;
+
+}
+.select_nav:hover{
+    background-color: orange;
+}
+.select_nav a{
+    text-decoration: none;
+    color: white;
+}
+/* header ends */
+
+.banner img{
+    width: 100%;
+}
+.jalabiya{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    /* border: 1px solid black; */
+    margin:50px;
+}
+.jalabiya_row1{
+    /* border: 1px solid black; */
+    background-image: url("./images/imp2.webp");
+  height: 620px;
+  background-size: cover;
+  background-position: top;
+}
+.jalabiya_row1 h2{
+    position: relative;
+    color: #eba525;
+    left: 40px;
+    font-size: 45px;
+    top: 50%;
+}
+.jalabiya_row1 p{
+    position: relative;
+    color: white;
+    /* line-height: 16px; */
+    top: 45%;
+    text-decoration: underline;
+    position: relative;
+    left: 78px;
+    font-size: 18px;
+}
+.jalabiya_row2{
+}
+.dress_type{
+    display: flex;
+    margin: 0px 250px;
+    /* border: 1px solid black; */
+
+}
+.dress_nav{
+    padding: 20px;
+}
+.dress_nav a{
+    text-decoration: none;
+    color: rgb(91, 91, 91);
+
+}
+.jalabiya_products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 20px;
+
+}
+.products_jalabiya{
+    margin: 15px;
+}
+.jalabiya_products img{
+    width: 100%;
+}
+.product_details{
+    text-align: center;
+}
+.product_details p{
+    color: rgb(151, 151, 146);
+    margin: 10px;
+    font-size: 12px;
+}
+.product_details h4{
+font-size: 25px;
+margin: 10px;
+font-size: 16px;
+
+}
+.product_details h5{
+    color: #f1b648;
+    font-size: 18px;
+    margin: 10px;
+
+}
+
+
+.bag_offer{
+    background-image:url(./images/deal2.jpg);
+    background-position: top;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 70px;
+    width:100%;
+}
+.offerisde{
+    margin: 50px;
+    text-align: center;
+}
+.offerisde h3{
+    font-size: 35px;
+}
+.offerisde h4{
+    font-size: 20px;
+    color: #eba525;
+}
+.offerisde span{
+    font-weight: normal;
+    font-size: 16px;
+    color: rgb(149, 152, 155);
+}
+.countdown{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 50px;
+}
+.countdown_box{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+}
+.countdown_box h5{
+    margin: 10px;
+    /* font-size: 34px; */
+    font-size: 35px;
+    color: #eba525;
+}
+.countdown_box h6{
+    margin: 10px;
+    /* font-size: 34px; */
+    font-size: 16px;
+    color: rgb(158, 158, 158);
+}
+.hizab{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin:50px;
+}
+
+.night_wear{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin:50px;
+}
+.trending{
+    text-align: center;
+    margin: 50px;
+}
+.trending h2{
+    font-size: 35px;
+}
+.trend_dress{
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(4,1fr);
+    
+    
+}
+.trend_models{
+    margin: 15px;
+    position: relative;
+}
+.trend_models:hover{
+    border: 13px solid black;
+    position: absolute;
+    width: -70px;
+    height: -140px;
+    opacity:50%;
+    
+
+}
+.trend_models img{
+    width: 100%;
+}
+.trend_models h4{
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    left: 49px;
+    font-size: 21px;
+    top: 23%;
+}
+.trend_models:hover{
+
+
+}
+.instagram{
+    text-align: center;
+}
+.instagram h2{
+    margin: 10px;
+    font-size: 40px;
+}
+.instagram p{
+    color: rgb(166, 167, 168);
+    margin: 10px;
+}
+.instagram_models{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.instagram_models img{
+    width: 100%;
+}
+.we_provide{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 50px;
+}
+.provide_discription{
+    padding-left: 40px;
+}
+.logos_area{
+    background-color: #3e3c3c;
+}
+.logo_sec{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.logo{
+  padding: 10px;
+}
+/* footer style stars */
+.footer_sec{
+    background-color:black ;
+}
+footer{
+    display: grid ;
+    grid-template-columns: 30% auto auto auto;
+   
+    /* margin: 50px; */
+}
+.footer_rows{
+    margin: 40px;
+    color: white;
+    text-align: left;
+}
+footer ul li{
+    line-height: 40px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: rgb(168, 167, 167);
+}
+.footer_sec1{
+    text-align: justify;
+    line-height: 35px;
+    color: rgb(168, 167, 167);
+}
+footer h2{
+    font-size: 20px;
+}
+.email,.subscribe{
+    border: 1px;
+    padding: 10px;
+    background-color: rgb(42, 39, 39);
+    color:aliceblue;
+
+}
+.subscribe{
+    background-color: #f1b648 !important;
+    color: white;
+    text-transform: uppercase;
+}
+hr{
+    border: 1px dotted rgb(126, 126, 123);    
+}
+.final{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.final p{
+    color:rgb(146, 146, 146); ;
+    margin-left: 40px;
+
+}
+.final .sponsers{
+    text-align: right;
+    margin-right: 40px;

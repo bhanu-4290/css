@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav ul li a {
+            text-decoration: none;
+            padding: 70px;
+            color: rgb(234, 229, 229);
+        }
+
+        .CATEGORIES ul li a {
+            text-decoration: none;
+            font-size: 23px;
+            color: rgb(8, 0, 8);
+
+
+        }
+        .main_things{
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+        }
+
+        .CATEGORIES ul li {
+            list-style-type: none;
+        }
+
+        .dro {
+            display: block;
+            padding-bottom: 10px;
+            font-weight: 900;
+            text-align: left;
+            row-gap: 100px;
+        }
+
+        .CATEGORIES ul li a:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .dropdown {
+            border: 1px solid black;
+            row-gap: 100px;
+
+
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            display: flex;
+            transition: 0.3s;
+            width: 200px;
+            height: 300px;
+            padding: 20px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        .footer_info ul li a,
+        .footer_acc ul li a {
+            color: aliceblue;
+            text-decoration: none;
+
+        }
+
+        .dropdown {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+
+        .dropdown select {
+            padding: 10px;
+            /* row-gap: 10px; */
+        }
+        .dro select{
+            border: none;
+            padding: 0.5rem;
+            text-decoration: underline;
+            font-size: 1rem;
+        }
+
+        .ban_card {
+
+            width: 330px;
+            height: 540px;
+            margin: 20px;
+            background-color: white;
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+            transition: 1s;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!--LOGO-->
+    <div class="header">
+        <div class="logo">
+            <img src="./images/logo" alt="no image" width="200px">
+
+            <div class="nav" style="background-color: rgb(8, 8, 8);">
+                <ul style="display: inline-flex; list-style-type: none;">
+                    <li> <a href="file:///D:/AIT-MERN/css%20project30_11/home.html">ALL ITEMS </a></li><br>
+                    <li> <a href="file:///D:/AIT-MERN/css%20project30_11/home.html"> HOME </a> </li><br>
+                    <li> <a href="file:///D:/AIT-MERN/css%20project30_11/pd.html">  PRODUCT DESCRIPTION</a> </li><br>
+                    <li> <a href="file:///D:/AIT-MERN/css%20project30_11/pl.html"> PRODUCT LIST </a> </li><br>
+                    <li> <a href="file:///D:/AIT-MERN/css%20project30_11/contact.html"> CONTACT </a> </li><br>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="drags">
+            <div class="CATEGORIES">
+                <h2> CATEGORIES</h2>
+                <UL>
+                    <li> <a href="#"> shirts</a> </li><br>
+                    <li> <a href="#"> Tshirts</a> </li><br>
+                    <li><a href="#"> JEANS</a> </li><br>
+                    <li><a href="#"> COTTON PANTS</a> </li><br>
+                    <li><a href="#"> UNDERWARES</a> </li><br>
+                </UL>
+
+            </div>
+            <div class="drop">
+                <div class="dro">
+                    
+                    <select name="price" id="price" style="font-size: 15px;">
+                        <option class="dropdown" value="none">PRICE</option>
+                        <option value="900">900</option>
+                        <option value="1000">1000</option>
+                        <option value="1500">1500</option>
+                        <option value="2000">2000</option>
+                    </select>
+                </div>
+                <div class="dro">
+                    <select name="price" id="price" style="font-size: 15px;">
+                        <option class="dropdown" value="none">none</option>
+                        <option value="SMALL">SMALL</option>
+                        <option value="MEDIUM">MEDIUM</option>
+                        <option value="LARGE">LARGE</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+                <div class="dro">
+                    <select name="color" id="color" style="font-size: 15px;">
+                        <option value="none">COLOR</option>
+                        <option value="black">BLACK</option>
+                        <option value="black">WHITE</option>
+                        <option value="black">GREEN</option>
+                        <option value="black">BLUE</option>
+                        <option value="black">WHIE</option>
+                        <option value="black">BROWN</option>
+                        <option value="black">PEACH</option>
+                        <option value="black">RED</option>
+                    </select>
+                </div>
+                <div class="dro">
+                    <select name="price" id="price" style="font-size: 15px;">
+                        <option class="dropdown" value="none">BRAND</option>
+                        <option value="SMALL">USPA</option>
+                        <option value="MEDIUM">TOMMY</option>
+                        <option value="LARGE">JOCKEY</option>
+                        <option value="XL">FHYGYF</option>
+                    </select>
+                </div>
+                <div class="dro">
+                    <select name="type" id="type" style="font-size: 15px;">
+                        <option class="dropdown" value="none">TYPE</option>
+                        <option value="SMALL">shirt</option>
+                        <option value="MEDIUM">TSHIRT</option>
+                        <option value="LARGE">TRACK</option>
+                        <option value="XL">JEANS</option>
+                        <option value="XL">CARGO</option>
+                        <option value="XL">PANNELS</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_things">
+            <div class="ban_card">
+                <img src="./images/pl_tshirt" alt="no" style="padding: 30px;">
+                <a href="file:///D:/AIT-MERN/css%20project30_11/pd.html"><p style="padding-left:30px;"> blue Tshirts </p>  </a>
+                 <button style="color: GREEN;background-color: black;padding: 12px; margin-left: 20px;"> ADD TO CART</button>
+                
+             </div>
+             <div class="ban_card">
+                <img src="./images/pl_tshirt" alt="no" style="padding: 30px;">
+                <a href="file:///D:/AIT-MERN/css%20project30_11/pd.html"><p style="padding-left:30px;"> blue Tshirts </p>  </a>
+                <button style="color: GREEN;background-color: black;padding: 12px; margin-left: 20px;"> ADD TO CART</button>
+                
+             </div>
+             <div class="ban_card">
+                <img src="./images/pl_tshirt" alt="no" style="padding: 30px;">
+              <a href="file:///D:/AIT-MERN/css%20project30_11/pd.html"><p style="padding-left:30px;"> blue Tshirts </p>  </a>
+
+                 <button style="color: GREEN;background-color: black;padding: 12px; margin-left: 20px;"> ADD TO CART</button>
+                
+             </div>
+             <div class="ban_card">
+                <img src="./images/pl_tshirt" alt="no" style="padding: 30px;">
+                <a href="file:///D:/AIT-MERN/css%20project30_11/pd.html"><p style="padding-left:30px;"> blue Tshirts </p>  </a>
+
+                 <button style="color: GREEN;background-color: black;padding: 12px; margin-left: 20px;"> ADD TO CART</button>
+                
+             </div><div class="ban_card">
+                <img src="./images/pl_tshirt" alt="no" style="padding: 30px;">
+                <a href="file:///D:/AIT-MERN/css%20project30_11/pd.html"><p style="padding-left:30px;"> blue Tshirts </p>  </a>
+
+                 <button style="color: GREEN;background-color: black;padding: 12px; margin-left: 20px;"> ADD TO CART</button>
+                
+             </div>
+             <div class="ban_card">
+                <img src="./images/pl_tshirt" alt="no" style="padding: 30px;">
+                <a href="file:///D:/AIT-MERN/css%20project30_11/pd.html"><p style="padding-left:30px;"> blue Tshirts </p>  </a>
+
+                 <button style="color: GREEN;background-color: black;padding: 12px; margin-left: 20px;"> ADD TO CART</button>
+                
+             </div>
+             <div class="ban_card">
+                <img src="./images/pl_tshirt" alt="no" style="padding: 30px;">
+                <a href="file:///D:/AIT-MERN/css%20project30_11/pd.html"><p style="padding-left:30px;"> blue Tshirts </p>  </a>
+
+                 <button style="color: GREEN;background-color: black;padding: 12px; margin-left: 20px;"> ADD TO CART</button>
+                
+             </div>
+             <div class="ban_card">
+                <img src="./images/pl_tshirt" alt="no" style="padding: 30px;">
+                <a href="file:///D:/AIT-MERN/css%20project30_11/pd.html"><p style="padding-left:30px;"> blue Tshirts </p>  </a>
+
+                 <button style="color: GREEN;background-color: black;padding: 12px; margin-left: 20px;"> ADD TO CART</button>
+                
+             </div>
+             <div class="ban_card">
+                <img src="./images/pl_tshirt" alt="no" style="padding: 30px;">
+                <a href="file:///D:/AIT-MERN/css%20project30_11/pd.html"><p style="padding-left:30px;"> blue Tshirts </p>  </a>
+
+                 <button style="color: GREEN;background-color: black;padding: 12px; margin-left: 20px;"> ADD TO CART</button>
+                
+             </div>
+
+
+
+        </div>
+
+    </div>
+    <!--footer -->
+    <footer style="display: grid ; grid-template-columns: repeat(4,1fr);background-color:black ; ;">
+        <section>
+            <img src="./images/logo" alt="no image" width="200px">
+            <p style="color: aliceblue;"> ADDRESS:16-786,OLD TOWN AP <br><br> phone:7337504290 <br><br>
+                email:gbhanu2811@gmail.com</p>
+            <img src="./images/insta_icon" alt="no " width="50px">
+            <img src="./images/what_icon.webp" alt="no" width="50px">
+            <img src="./images/pin_icon.webp" alt="no" width="50px">
+            <img src="./images/face_icon.webp" alt="no" width="50px">
+        </section>
+        <section class="footer_info" style="color: aliceblue;">
+            <h2>INFORMATION</h2>
+            <ul style="list-style-type: none;">
+                <li>
+                    <a href="#">ABOUT US </a>
+                </li>
+                <li>
+                    <a href="#">CHCEK OUT </a>
+                </li>
+                <li>
+                    <a href="#">Contact </a>
+                </li>
+                <li>
+                    <a href="#"> SERVICES </a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer_acc" style="color: aliceblue;">
+            <h2> MY ACCOUNT</h2>
+            <ul style="list-style-type: none;">
+                <li>
+                    <a href="#">MY ACCOUNT </a>
+                </li>
+                <li>
+                    <a href="#">CONACT </a>
+                </li>
+                <li>
+                    <a href="#"> SHOPPING CART</a>
+                </li>
+                <li>
+                    <a href="#"> SHOP</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 style="color: aliceblue;"> Join our newsletter now</h2>
+            <span style="color: aliceblue;"> GET E-MAIL UPDATES ABOUT SHOP AND OFFERS</span><br>
+            <input type="text" name=" name " placeholder="Enter ur mail" style="background-color: aliceblue;"><br><br>
+        </section>
+    </footer>
+
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>var number=10;
+var number2=prompt("enter the number")
+
+switch(number1==number2){
+    case number2==6:
+     alert("too far")
+    break;
+
+    case number2==8:
+    alert("near")
+    break;
+}
+
+var number1= 10;
+var number2=prompt("enter the num")
+if (number1==number2){
+  alert("correct")
+}
+else if (number2 <5){
+  alert(" too small")
+}
+else if (number2 <10){
+  alert(" near")
+}
+
+
+else if (number2 > 10) 
+{
+  alert(" far")
+}
+else {
+  alert("not vaild input")
+}
